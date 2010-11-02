@@ -55,7 +55,7 @@ add_filter( 'map_meta_cap', 'headless_remove_capabilities', 10, 2 );
 function headless_theme() {
 
     # we'll let JSON-API work
-    if ( ! get_query_var('json') )
+    if ( ! get_query_var('json') && ! get_query_var('feed') )
         wp_redirect(get_admin_url(), 301);
 
 }
