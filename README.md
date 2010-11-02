@@ -7,7 +7,5 @@ This plugin disables everything but the Wordpress admin. It redirects most urls 
 
 Wordpress is a great platform, but I'm tired of writing customizations in PHP. This plugin is meant to encourge front-end development in other languages. Use something like the [JSON-API Wordpress plugin](http://wordpress.org/extend/plugins/json-api/) or [django-wordpress](http://github.com/sunlightlabs/django-wordpress) as a bridge. Integrate content and data and don't worry about learning a new CMS.
 
-<code>
-cd wp-content/plugins
-git clone http://github.com/ryanmark/wp-headless.git headless
-</code>
+    cd wp-content/plugins
+    git clone http://github.com/ryanmark/wp-headless.git headless
