@@ -53,7 +53,11 @@ add_filter( 'map_meta_cap', 'headless_remove_capabilities', 10, 2 );
  * Muck up the theme
  */
 function headless_theme() {
-    wp_redirect(get_admin_url(), 301);
+
+    # we'll let JSON-API work
+    if ( ! get_query_var('json') )
+        wp_redirect(get_admin_url(), 301);
+
 }
 add_action( 'template_redirect', 'headless_theme' );
 
