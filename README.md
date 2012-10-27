@@ -1,7 +1,7 @@
 Headless Wordpress
 ==================
 
-Use Wordpress for it's gorgeous back-end.
+Use Wordpress for its gorgeous back-end.
 
 This plugin disables everything but the Wordpress admin. It redirects most urls to the admin. All front-end related stuff is disabled (Appearance menu) and permalinks are customizably overrided. 
 
